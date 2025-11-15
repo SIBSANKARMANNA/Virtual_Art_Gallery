@@ -77,7 +77,8 @@ export default function NavigationControls() {
       setUpdating(true);
       const newLikes = Math.max(0, selectedArtwork.likes + change); // prevent negative likes
 
-      const res = await fetch(`http://localhost:5000/api/artworks/${selectedArtwork._id}`, {
+      // const res = await fetch(`http://localhost:5000/api/artworks/${selectedArtwork._id}`, {
+      const res = await fetch(`https://virtual-art-gallery-7o5w.onrender.com/api/artworks/${selectedArtwork._id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ likes: newLikes }),

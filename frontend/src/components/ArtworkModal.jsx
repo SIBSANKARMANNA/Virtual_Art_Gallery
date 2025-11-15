@@ -43,7 +43,8 @@ export default function ArtworkModal() {
               style={{ maxHeight: "70vh" }}
             >
               <motion.img
-                src={`http://localhost:5000${selectedArtwork.imageUrl}`}
+                // src={`http://localhost:5000${selectedArtwork.imageUrl}`}
+                src={`https://virtual-art-gallery-7o5w.onrender.com${selectedArtwork.imageUrl}`}
                 alt={selectedArtwork.title}
                 className="object-contain rounded-lg transition-transform duration-300"
                 style={{ transform: `scale(${zoom})` }}

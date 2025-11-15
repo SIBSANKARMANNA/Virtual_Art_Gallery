@@ -24,7 +24,8 @@ export const GalleryProvider = ({ children }) => {
   useEffect(() => {
     const fetchArtworks = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/artworks");
+        // const res = await axios.get("http://localhost:5000/api/artworks");
+        const res = await axios.get("https://virtual-art-gallery-7o5w.onrender.com/api/artworks");
         // console.log("Fetched artworks:", res.data);
         setArtworks(res.data);
       } catch (err) {

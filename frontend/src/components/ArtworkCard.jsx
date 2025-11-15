@@ -20,7 +20,8 @@ export default function ArtworkCard({ artwork }) {
       className="cursor-pointer rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow"
     >
       <img
-        src={`http://localhost:5000${artwork.imageUrl}`}
+        // src={`http://localhost:5000${artwork.imageUrl}`}
+        src={`https://virtual-art-gallery-7o5w.onrender.com${artwork.imageUrl}`}
         alt={artwork.title}
         className="w-full h-56 object-cover"
         loading="lazy"
